@@ -9,21 +9,17 @@ st.title("Input Widgets")
 st.header("Pie Chart")
 coin = ['heads', 'tails']
 
-code = """slider_input = st.radio(
-    "Select Slider or Number Input",
-    ["Slider", "Number Input"])
-
-flips = 0
-if slider_input == "Slider":
-    flips = st.slider("Number of tosses", 0, 100, 3)
-elif slider_input == "Number Input":
-    flips = st.number_input("Number of tosses")"""
-
 
 # -------- Create a radio select input that toogles between slider and number inputs ----------------------
 
 
 # ----------- Add a slider and a number input that can change variable 'flips' -------------------------
+radio = ""
+if radio == "Slider":
+    """Add code here"""
+elif radio == "Number Input":
+    """Add code here"""
+
 flips = 0
 
 
@@ -59,8 +55,7 @@ st.header("Line Graph")
 chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["A", "B", "C"])
 
 # ------------- Create a select box with options "All", 'A', "B", "C" ---------------------------
-selected_data = st.selectbox("Line Graph", ["All", 'A', "B", "C"])
-
+selected_data = 'All'
 # Filter data based on user selection
 if selected_data == 'All':
     data_to_display = chart_data
